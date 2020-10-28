@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "name": "categoria"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "reg_producto": {
+      "via": "categorias",
+      "model": "reg-productos"
+    }
+  }
+}

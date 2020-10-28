@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reg_productos",
+  "info": {
+    "name": "reg-productos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "precio": {
+      "type": "biginteger"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "categorias": {
+      "collection": "categoria",
+      "via": "reg_producto"
+    }
+  }
+}
