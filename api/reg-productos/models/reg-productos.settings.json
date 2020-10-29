@@ -23,10 +23,6 @@
     "cantidad": {
       "type": "integer"
     },
-    "categorias": {
-      "collection": "categoria",
-      "via": "reg_producto"
-    },
     "imagen": {
       "model": "file",
       "via": "related",
@@ -37,6 +33,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "categoria": {
+      "model": "categoria"
     }
   }
 }

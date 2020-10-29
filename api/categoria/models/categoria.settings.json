@@ -12,10 +12,6 @@
   "attributes": {
     "nombre": {
       "type": "string"
-    },
-    "reg_producto": {
-      "via": "categorias",
-      "model": "reg-productos"
     }
   }
 }
